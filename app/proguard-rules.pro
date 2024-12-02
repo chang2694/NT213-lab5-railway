@@ -19,3 +19,10 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Giữ lại các lớp hoặc phương thức cần thiết
+-keep class com.example.myapp.** { *; }
+
+# Không xáo trộn thư viện
+-dontwarn org.apache.**
+-dontwarn javax.**
